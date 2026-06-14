@@ -18,11 +18,11 @@
       <ul class="pagination justify-content-center mt-3">
         {% if current_page == 0 %}
           <li class="page-item disabled">
-            <a class="page-link" href="../pages/index_{{ current_page-1 }}.html" aria-disabled="true">Previous</a>
+            <a class="page-link" href="../pages/index_{{ current_page-1 }}.html" aria-disabled="true">Назад</a>
           </li>
         {% else %}
           <li class="page-item">
-            <a class="page-link" href="../pages/index_{{ current_page-1 }}.html">Previous</a>
+            <a class="page-link" href="../pages/index_{{ current_page-1 }}.html">Назад</a>
           </li>
         {% endif %}
         {% for i in range(pages) %}
@@ -30,11 +30,11 @@
         {% endfor %}
         {% if current_page == pages-1 %}
           <li class="page-item disabled">
-            <a class="page-link" href="../pages/index_{{ current_page+1 }}.html" aria-disabled="true">Next</a>
+            <a class="page-link" href="../pages/index_{{ current_page+1 }}.html" aria-disabled="true">Вперед</a>
           </li>
         {% else %}
           <li class="page-item">
-            <a class="page-link" href="../pages/index_{{ current_page+1 }}.html">Next</a>
+            <a class="page-link" href="../pages/index_{{ current_page+1 }}.html">Вперед</a>
           </li>
         {% endif %}
       </ul>
